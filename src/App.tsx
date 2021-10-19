@@ -4,7 +4,7 @@ import {Settings} from "./components/Settings";
 import {Increment} from "./components/Increment";
 import {storage} from "./storage/storage";
 
-function App() {
+export function App() {
 
     const initMaxValue = storage.getItem("maxValue") ? storage.getItem("maxValue") : 10;
     const initStartValue = storage.getItem("startValue") ? storage.getItem("startValue") : 0;
@@ -78,5 +78,3 @@ function App() {
         </div>
     );
 }
-
-export default App;
