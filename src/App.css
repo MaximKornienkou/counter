@@ -1,38 +1,67 @@
-.App {
-  text-align: center;
+.container {
+    display: flex;
+    background-color: darkslategray;
+    justify-content: space-around;
+    margin: 20px;
+    padding: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.inputsBlock {
+    border: 2px solid deepskyblue;
+    border-radius: 5px;
+    padding: 15px;
+    min-width: 250px;
+    max-width: 250px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.inputsInterface {
+    border: 2px solid deepskyblue;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 15px;
+    height: 40%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.resultInterface {
+    border: 2px solid deepskyblue;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 15px;
+    color: deepskyblue;
+    height: 40%;
+    text-align: center;
 }
 
-.App-link {
-  color: #61dafb;
+.incrementValue{
+    font-size: 45px;
+}
+.incrementValue1{
+    margin-top: 10px;
+    font-size: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.inputsInterface label {
+    color: deepskyblue;
+    margin-right: 15px;
 }
+
+.inputsInterface input {
+    border-radius: 3px;
+    border: 2px solid deepskyblue;
+    width: 49%;
+}
+
+.buttonSection {
+    display: flex;
+    justify-content: space-around;
+    border: 2px solid deepskyblue;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+.inputsInterface div {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+}
+
