@@ -15,7 +15,7 @@ export function App() {
     const [incrementValue, setIncrementValue] = useState(startValue);
     const [disabledSetButton, setDisabledSetButton] = useState(true);
     const [disabledIncResetButton, setDisabledIncResetButton] = useState(false);
-    const [error, setError] = useState("Incorrect value!")
+    const [error, setError] = useState("")
 
 
     const increaseValue = () => {
@@ -28,7 +28,7 @@ export function App() {
     const onChangeStartValue = (value: number) => {
         setStartValue(value);
         if (value < 0 || value >= maxValue) {
-            setIncrementValue(error);
+            setIncrementValue("Incorrect value!");
             setDisabledSetButton(true);
         } else {
             setDisabledSetButton(false);
@@ -41,7 +41,7 @@ export function App() {
         setMaxValue(value);
         setDisabledIncResetButton(true);
         if (value <= startValue || startValue < 0) {
-            setIncrementValue(error);
+            setIncrementValue("Incorrect value!");
             setDisabledSetButton(true);
         } else {
             setDisabledSetButton(false);
