@@ -26,12 +26,11 @@ export function App() {
     }
 
     const onChangeStartValue = (value: number) => {
+        setStartValue(value);
         if (value < 0 || value >= maxValue) {
             setIncrementValue(error);
-            setStartValue(value);
             setDisabledSetButton(true);
         } else {
-            setStartValue(value);
             setDisabledSetButton(false);
             setDisabledIncResetButton(true);
             setIncrementValue("enter values and press 'set'")
@@ -39,15 +38,13 @@ export function App() {
         }
     }
     const onChangeMaxValue = (value: number) => {
+        setMaxValue(value);
+        setDisabledIncResetButton(true);
         if (value <= startValue || startValue < 0) {
             setIncrementValue(error);
-            setMaxValue(value);
             setDisabledSetButton(true);
-            setDisabledIncResetButton(true);
         } else {
-            setMaxValue(value);
             setDisabledSetButton(false);
-            setDisabledIncResetButton(true);
             setIncrementValue("enter values and press 'set'");
         }
     }
