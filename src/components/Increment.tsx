@@ -29,7 +29,7 @@ export function Increment(props: IncrementPropsType) {
                 <Button buttonTitle={"inc"}
                         callback={incrementValue}
                         disabled={props.disabledIncResetButton || props.incrementValue === props.maxValue}/>
-                <Button buttonTitle={"reset"}
+                <Button buttonTitle={"Reset"}
                         callback={resetValue}
                         disabled={props.disabledIncResetButton}/>
             </div>
